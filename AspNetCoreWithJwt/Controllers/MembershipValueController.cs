@@ -36,7 +36,7 @@ namespace AspNetCoreWithJwt.Controllers
         }
         
         [AllowAnonymous]
-        [HttpPost("auth")]
+        [HttpPost("logindetails")]
         public async Task<IActionResult> SignIn(SignInRequest request)
         {
             var token = await _userServices.SignInAsync(request);
